@@ -4,8 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e20c48c5-83cd-4ad5-ac67-63387c424c9c" name="Changes" comment="creating MyInterfaces and MyExceptions">
-      <change afterPath="$PROJECT_DIR$/src/MySorting/QuickSort.java" afterDir="false" />
+    <list default="true" id="e20c48c5-83cd-4ad5-ac67-63387c424c9c" name="Changes" comment="own quick sorting method creating">
+      <change afterPath="$PROJECT_DIR$/src/MyClasses/MyArrayList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/MyClasses/MyLinkedList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/MyClasses/MyMinHeap.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/MyClasses/MyQueue.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/MyClasses/MyStack.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -35,7 +39,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "main",
-    "last_opened_file_path": "D:/ads_assignment_2/ads_assignment2/src/MyExceptions",
+    "last_opened_file_path": "D:/ads_assignment_2/ads_assignment2/src/MyClasses",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -47,6 +51,7 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\ads_assignment_2\ads_assignment2\src\MyClasses" />
       <recent name="D:\ads_assignment_2\ads_assignment2\src\MyExceptions" />
       <recent name="D:\ads_assignment_2\ads_assignment2\src\MyInterfaces" />
     </key>
@@ -59,7 +64,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1713542585440</updated>
-      <workItem from="1713542586477" duration="1088000" />
+      <workItem from="1713542586477" duration="2036000" />
     </task>
     <task id="LOCAL-00001" summary="creating MyInterfaces and MyExceptions">
       <option name="closed" value="true" />
@@ -69,7 +74,15 @@
       <option name="project" value="LOCAL" />
       <updated>1713542736857</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="own quick sorting method creating">
+      <option name="closed" value="true" />
+      <created>1713543943610</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1713543943610</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -88,6 +101,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="creating MyInterfaces and MyExceptions" />
-    <option name="LAST_COMMIT_MESSAGE" value="creating MyInterfaces and MyExceptions" />
+    <MESSAGE value="own quick sorting method creating" />
+    <option name="LAST_COMMIT_MESSAGE" value="own quick sorting method creating" />
   </component>
 </project>
