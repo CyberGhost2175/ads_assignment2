@@ -80,41 +80,41 @@ public class Main {
 
         // ----------------- MyLinkedList using ------------------ \\
 
-        MyLinkedList linkList = new MyLinkedList();
-        linkList.add("1");
-        linkList.add("fff");
-        linkList.add("333");
-        linkList.add("444");
-        linkList.add("212");
-        linkList.add("323");
-
-        linkList.sort();
-        printLinked(linkList.toArray(), "");
-
-        linkList.add("aaa");
-        linkList.add('d');
-        linkList.add("563AMI01");
-
-        printLinked(linkList.toArray(), "First linked list: ");
-
-        linkList.add(1, "index1");
-        linkList.addFirst("first");
-        linkList.addLast("last");
-        linkList.set(3, "3");
-
-        printLinked(linkList.toArray(), "After add, addFirst, addLast, set(3): ");
-
-        System.out.println(linkList.getFirst());
-        System.out.println(linkList.getLast());
-        System.out.println(linkList.indexOf("vv"));
-        System.out.println(linkList.lastIndexOf('d'));
-
-        linkList.remove(1);
-        linkList.removeFirst();
-        linkList.removeLast();
-
-        System.out.println(linkList.size());
-        printLinked(linkList.toArray(), "After remove(1), removeFirst, removeLast: ");
+//        MyLinkedList linkList = new MyLinkedList();
+//        linkList.add("1");
+//        linkList.add("fff");
+//        linkList.add("333");
+//        linkList.add("444");
+//        linkList.add("212");
+//        linkList.add("323");
+//
+//        linkList.sort();
+//        printLinked(linkList.toArray(), "");
+//
+//        linkList.add("aaa");
+//        linkList.add('d');
+//        linkList.add("563AMI01");
+//
+//        printLinked(linkList.toArray(), "First linked list: ");
+//
+//        linkList.add(1, "index1");
+//        linkList.addFirst("first");
+//        linkList.addLast("last");
+//        linkList.set(3, "3");
+//
+//        printLinked(linkList.toArray(), "After add, addFirst, addLast, set(3): ");
+//
+//        System.out.println(linkList.getFirst());
+//        System.out.println(linkList.getLast());
+//        System.out.println(linkList.indexOf("vv"));
+//        System.out.println(linkList.lastIndexOf('d'));
+//
+//        linkList.remove(1);
+//        linkList.removeFirst();
+//        linkList.removeLast();
+//
+//        System.out.println(linkList.size());
+//        printLinked(linkList.toArray(), "After remove(1), removeFirst, removeLast: ");
 
 
 
@@ -123,14 +123,14 @@ public class Main {
 
         // ----------------- MyStack using ------------------ \\
 
-        MyStack stack = new MyStack();
-
-        stack.push(123);
-        stack.push("temp");
-        stack.push(423);
-        stack.push('W');
-
-        System.out.println(stack.get());
+//        MyStack stack = new MyStack();
+//
+//        stack.push(123);
+//        stack.push("temp");
+//        stack.push(423);
+//        stack.push('W');
+//
+//        System.out.println(stack.get());
 
 
 
@@ -139,45 +139,45 @@ public class Main {
 
         // ----------------- MyHeap using ------------------ \\
 
-        MyMinHeap minHeap = new MyMinHeap();
-        minHeap.insert(1);
-        minHeap.insert(2);
-        minHeap.insert(3);
-        minHeap.insert(4);
-        minHeap.insert(5);
-        minHeap.insert(10);
-        minHeap.insert(47);
-        minHeap.insert(42);
-
-        for(int i = 0; i < 7; i++){
-            System.out.println((i + 1) + ": " + minHeap.get(i));
-        }
-
-        minHeap.removeSmallest();
-
-        for(int i = 0; i < 7; i++){
-            System.out.println((i + 1) + ": " + minHeap.get(i));
-        }
+//        MyMinHeap minHeap = new MyMinHeap();
+//        minHeap.insert(1);
+//        minHeap.insert(2);
+//        minHeap.insert(3);
+//        minHeap.insert(4);
+//        minHeap.insert(5);
+//        minHeap.insert(10);
+//        minHeap.insert(47);
+//        minHeap.insert(42);
+//
+//        for(int i = 0; i < 7; i++){
+//            System.out.println((i + 1) + ": " + minHeap.get(i));
+//        }
+//
+//        minHeap.removeSmallest();
+//
+//        for(int i = 0; i < 7; i++){
+//            System.out.println((i + 1) + ": " + minHeap.get(i));
+//        }
 
 
 
 
         // ----------------- MyQueue using ------------------ \\
-        MyQueue queue = new MyQueue();
-        queue.enqueue(3);
-        queue.enqueue(24);
-        queue.enqueue(31);
-        queue.enqueue(1);
-
-        System.out.println(queue.peek());
-        queue.dequeue();
-        System.out.println(queue.peek());
-        queue.dequeue();
-        System.out.println(queue.peek());
-        queue.dequeue();
-        System.out.println(queue.peek());
-        queue.dequeue();
-        System.out.println(queue.peek());
+//        MyQueue queue = new MyQueue();
+//        queue.enqueue(3);
+//        queue.enqueue(24);
+//        queue.enqueue(31);
+//        queue.enqueue(1);
+//
+//        System.out.println(queue.peek());
+//        queue.dequeue();
+//        System.out.println(queue.peek());
+//        queue.dequeue();
+//        System.out.println(queue.peek());
+//        queue.dequeue();
+//        System.out.println(queue.peek());
+//        queue.dequeue();
+//        System.out.println(queue.peek());
 
     }
 }
