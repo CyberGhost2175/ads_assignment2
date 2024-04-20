@@ -5,7 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e20c48c5-83cd-4ad5-ac67-63387c424c9c" name="Changes" comment="using all classes">
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/README" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MyClasses/MyArrayList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MyClasses/MyArrayList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MyClasses/MyLinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MyClasses/MyLinkedList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MyClasses/MyMinHeap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MyClasses/MyMinHeap.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MyClasses/MyQueue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MyClasses/MyQueue.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MyClasses/MyStack.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MyClasses/MyStack.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MyInterfaces/MyListInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MyInterfaces/MyListInterface.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MyInterfaces/MyMinHeapInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MyInterfaces/MyMinHeapInterface.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MyInterfaces/MyQueueInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MyInterfaces/MyQueueInterface.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MyInterfaces/MyStackInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MyInterfaces/MyStackInterface.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MySorting/QuickSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MySorting/QuickSort.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,22 +39,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "D:/ads_assignment_2/ads_assignment2/src/MyClasses",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "project.propVCSSupport.CommitDialog",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/ads_assignment_2/ads_assignment2/src/MyClasses&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;project.propVCSSupport.CommitDialog&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\ads_assignment_2\ads_assignment2\src\MyClasses" />
@@ -59,7 +70,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1713542585440</updated>
-      <workItem from="1713542586477" duration="4166000" />
+      <workItem from="1713542586477" duration="4253000" />
+      <workItem from="1713620082996" duration="4806000" />
     </task>
     <task id="LOCAL-00001" summary="creating MyInterfaces and MyExceptions">
       <option name="closed" value="true" />
@@ -93,7 +105,15 @@
       <option name="project" value="LOCAL" />
       <updated>1713546615885</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="using all classes">
+      <option name="closed" value="true" />
+      <created>1713546799466</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1713546799466</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

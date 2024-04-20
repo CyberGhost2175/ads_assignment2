@@ -1,0 +1,25 @@
+## Custom Data Structures and Algorithms in Java
+
+## Description
+
+This project provides a collection
+ of custom implementations for common data
+ structures and algorithms in Java.
+ The goal is to offer robust, well-documented,
+  and easy-to-use versions of structures such as linked lists,
+  stacks, queues, and heaps, alongside a sorting algorithm (QuickSort),
+   designed to provide foundational knowledge for educational purposes and
+   to support complex data manipulation in Java applications.
+
+## Features
+
+- **Custom LinkedList**: Doubly linked list implementation allowing element manipulation at both ends.
+- **Custom Stack**: Implements a last-in-first-out (LIFO) data structure.
+- **Custom Queue**: Implements a first-in-first-out (FIFO) data structure.
+- **Custom MinHeap**: Provides a minimum heap that allows quick access to the smallest element.
+- **QuickSort Algorithm**: A sorting algorithm for ordering elements within an array efficiently.
+
+
+
+
+
