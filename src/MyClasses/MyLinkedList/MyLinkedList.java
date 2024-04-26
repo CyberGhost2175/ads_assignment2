@@ -1,4 +1,4 @@
-package MyClasses;
+package MyClasses.MyLinkedList;
 
 import MyExceptions.MyNoSuchElementException;
 import MyExceptions.MyIndexOutOfBoundsException;
@@ -8,17 +8,26 @@ import MySorting.QuickSort;
 import java.util.Iterator;
 
 @SuppressWarnings("unchecked")// commonly needed when dealing with generics in Java
-public class MyLinkedList<T> implements MyListInterface<T> {
+public class   MyLinkedList<T> implements MyListInterface<T> {
     private MyNode<T> head; //  first node in the list
     private MyNode<T> tail; //  last node in the list
     private int size; // The number of elements in the list
 
+
+    /**
+     * Initializes an empty list.
+     * Time Complexity: O(1)
+     */
     public MyLinkedList() {    // Constructor initializes the list as empty
         head = null;
         tail = null;
         size = 0;
     }
 
+    /**
+     * Adds an element to the end of the list.
+     * Time Complexity: O(1)
+     */
     @Override
     // Adds an element to the end of the list
     public void add(T item) {
@@ -32,6 +41,11 @@ public class MyLinkedList<T> implements MyListInterface<T> {
         size++;
     }
 
+
+    /**
+     * Replaces the element at the specified position.
+     * Time Complexity: O(n), as it requires traversing to the position.
+     */
     // Replaces the element at the specified position
     @Override
     public void set(int index, T item) {
@@ -39,6 +53,10 @@ public class MyLinkedList<T> implements MyListInterface<T> {
     }
 
     // Inserts an element at the specified position, shifting other elements as necessary
+    /**
+     * Inserts an element at the specified position.
+     * Time Complexity: O(n), involves traversal up to the index.
+     */
     @Override
     public void add(int index, T item) {
         checkIndex(index); // Validates the index
@@ -54,30 +72,51 @@ public class MyLinkedList<T> implements MyListInterface<T> {
     }
 
     // Adds an element at the start of the list
+    /**
+     * Adds an element to the beginning of the list.
+     * Time Complexity: O(1)
+     */
     @Override
     public void addFirst(T item) {
         add(0, item);
     }
 
+    /**
+     * Adds an element to the end of the list (similar to add method).
+     * Time Complexity: O(1)
+     */
     // Adds an element at the end of the list
     @Override
     public void addLast(T item) {
         add(item);
     }
 
+    /**
+     * Retrieves an element by its index.
+     * Time Complexity: O(n), as it may traverse the whole list.
+     */
     // returns the element by its index
     @Override
     public T get(int index) {
         return getNode(index).element;
     }
 
+    /**
+     * Returns the first element in the list, or null if empty.
+     * Time Complexity: O(1)
+     */
     // Returns the first element of the list
+
     @Override
     public T getFirst() {
         if (head == null) return null;
         return head.element;
     }
 
+    /**
+     * Returns the last element in the list, or null if empty.
+     * Time Complexity: O(1)
+     */
     // Returns the last element of the list
     @Override
     public T getLast() {
@@ -85,6 +124,10 @@ public class MyLinkedList<T> implements MyListInterface<T> {
         return tail.element;
     }
 
+    /**
+     * Removes the element at the specified index.
+     * Time Complexity: O(n), due to traversal to the index.
+     */
     // Removes the element at the specified index
     @Override
     public void remove(int index) {
@@ -97,6 +140,11 @@ public class MyLinkedList<T> implements MyListInterface<T> {
         size--;
     }
 
+
+    /**
+     * Removes the first element of the list.
+     * Time Complexity: O(1)
+     */
     // Removes the first element of the list
     @Override
     public void removeFirst() {
@@ -109,6 +157,11 @@ public class MyLinkedList<T> implements MyListInterface<T> {
         size--;
     }
 
+
+    /**
+     * Removes the last element of the list.
+     * Time Complexity: O(1)
+     */
     // Removes the last element of the list
     @Override
     public void removeLast() {
@@ -122,6 +175,11 @@ public class MyLinkedList<T> implements MyListInterface<T> {
     }
 
     // Sorts the list using the quicksort algorithm
+    /**
+     * Sorts the list using the quicksort algorithm. It converts the linked list to an array, sorts it,
+     * and then rebuilds the linked list from the sorted array.
+     * Time Complexity: O(n log n) on average due to the quicksort algorithm.
+     */
     @Override
     public void sort() {
         Object[] array = toArray();
@@ -129,7 +187,12 @@ public class MyLinkedList<T> implements MyListInterface<T> {
         arrayToLinkedList(array);  // Convert the array back to a linked list after sorting
     }
 
-    // Returns the index of the first occurrence of the specified object in the list
+
+
+    /**
+     * Returns the index of the first occurrence of the specified object in the list.
+     * Time Complexity: O(n), as it requires linear traversal to find the object.
+     */    // Returns the index of the first occurrence of the specified object in the list
     @Override
     public int indexOf(Object object) {
         for (int i = 0; i < size; i++) if (get(i).equals(object)) return i;
@@ -137,6 +200,10 @@ public class MyLinkedList<T> implements MyListInterface<T> {
     }
 
     // Returns the index of the last occurrence of the specified object in the list
+    /**
+     * Returns the index of the last occurrence of the specified object in the list.
+     * Time Complexity: O(n), as it may require scanning the entire list in reverse.
+     */
     @Override
     public int lastIndexOf(Object object) {
         for (int i = size - 1; i >= 0; i--) if (get(i).equals(object)) return i;
@@ -144,6 +211,10 @@ public class MyLinkedList<T> implements MyListInterface<T> {
     }
 
     // Checks if the specified object exists in the list
+    /**
+     * Checks if the specified object exists in the list by linear search.
+     * Time Complexity: O(n), as it requires scanning the entire list.
+     */
     @Override
     public boolean exists(Object object) {
         for (int i = 0; i < size; i++) if (get(i).equals(object)) return true;
@@ -151,6 +222,11 @@ public class MyLinkedList<T> implements MyListInterface<T> {
     }
 
     // Converts the linked list into an array of objects
+    /**
+     * Converts the linked list into an array of objects.
+     * Time Complexity: O(n), as it involves iterating through all elements to place them in an array.
+     */
+
     @Override
     public Object[] toArray() {
         Object[] result = new Object[size];
@@ -159,6 +235,10 @@ public class MyLinkedList<T> implements MyListInterface<T> {
     }
 
     // Clears the list, resetting head and tail references and size to zero
+    /**
+     * Clears the list, resetting head and tail references and size to zero.
+     * Time Complexity: O(1), direct reset of a few variables.
+     */
     @Override
     public void clear() {
         head = null;
@@ -167,12 +247,20 @@ public class MyLinkedList<T> implements MyListInterface<T> {
     }
 
     // Returns the number of elements in the list
+    /**
+     * Returns the number of elements in the list.
+     * Time Complexity: O(1), as it just returns the size variable.
+     */
     @Override
     public int size() {
         return size;
     }
 
     // Helper method to retrieve the node at a specific index
+    /**
+     * Retrieves the node at a specific index in the list.
+     * Time Complexity: O(n), as it potentially requires traversing up to the index.
+     */
     private MyNode<T> getNode(int index) {
         checkIndex(index);
         MyNode<T> currentNode = head;
@@ -181,17 +269,29 @@ public class MyLinkedList<T> implements MyListInterface<T> {
     }
 
     // Validates that the index is within the bounds of the list
+    /**
+     * Validates that the index is within the bounds of the list and throws an exception if not.
+     * Time Complexity: O(1), checks two conditions.
+     */
     private void checkIndex(int index) {
         if (index < 0 || index >= size) throw new MyIndexOutOfBoundsException(index);
     }
 
     // Converts an array back to the linked list after sorting
+    /**
+     * Converts an array back to the linked list after sorting.
+     * Time Complexity: O(n), as it involves iterating over the array and adding elements to the list.
+     */
     private void arrayToLinkedList(Object[] arr) {
         clear();
         for (Object item : arr) add((T) item);
     }
 
     // Provides an iterator over elements of type T
+    /**
+     * Provides an iterator over elements of type T.
+     * Time Complexity: Iterator creation is O(1), iterating over elements will be O(n).
+     */
     @Override
     public Iterator<T> iterator() {
         return new MyIterator<>();

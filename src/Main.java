@@ -1,8 +1,4 @@
-import MyClasses.MyArrayList;
-import MyClasses.MyMinHeap;
-import MyClasses.MyQueue;
-import MyClasses.MyStack;
-import MyClasses.MyLinkedList;
+import MyClasses.MyArrayList.MyArrayList;
 
 public class Main {
     static void printArr(MyArrayList arr, String m){
